@@ -22,12 +22,6 @@ public class BatchingTest extends BaseTest {
     TestHelper.execute(pg.getPostgresDatabase(), "delete from resume");
   }
 
-  /**
-   * ToDo доконфигурируйте ru.hh.school.batching.Resume
-   *
-   * @see scripts/create_resume.sql
-   *      и hibernate.properties (раздел batch processing)
-   */
   @Test
   public void fewPersistsShouldBeCombinedIntoBatch() {
     doInTransaction(() -> {

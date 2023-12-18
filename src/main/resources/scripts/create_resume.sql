@@ -1,3 +1,7 @@
+-- без дропов тесты не проходят
+-- Caused by: org.postgresql.util.PSQLException: ОШИБКА: отношение "resume_id_seq" уже существует
+-- drop sequence resume_id_seq cascade;
+-- drop table resume cascade;
 create sequence resume_id_seq
   minvalue 1
   start with 1
